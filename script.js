@@ -82,30 +82,29 @@ fetch(`http://api.aladhan.com/v1/calendar?latitude=${lat}&longitude=${long}&meth
         let nextPrayer = 'Fajr'
 
 
-        if( dhuhrHours >= currentHours || currentHours === dhuhrHours && dhuhrMinutes >= currentMinutes ){
+        if( currentHours >= dhuhrHours || currentHours === dhuhrHours && currentMinutes >= dhuhrMinutes ){
             nextPrayer = 'Dhuhr'
-           return console.log(timeLeft(dhuhrHours, dhuhrMinutes))
+           return `The next prayer is ${nextPrayer} which is ${timeLeft(dhuhrHours,dhuhrMinutes)}`
         }
-        else if(asrHours >= currentHours || currentHours === asrHours && asrMinutes >= currentMinutes){
+        else if(currentHours >= asrHours || currentHours === asrHours && currentMinutes >= asrMinutes){
             nextPrayer = 'Asr'
-           return console.log(`The next prayer is ${timeLeft(asrHours, asrMinutes)}`)
+           return `The next prayer is ${nextPrayer} which is ${timeLeft(asrHours,asrMinutes)}`
         }
-        else if(maghribHours >= currentHours || currentHours === maghribHours && maghribMinutes >= currentMinutes){
+        else if(currentHours >= maghribHours || currentHours === maghribHours && currentMinutes >= maghribMinutes){
             nextPrayer = 'Maghrib'
-           return console.log(`The next prayer is ${nextPrayer}${timeLeft(maghribHours, maghribMinutes)}`)
+           return `The next prayer is ${nextPrayer} which is ${timeLeft(maghribHours,maghribMinutes)}`
         }
-        else if(ishaHours >= currentHours || currentHours === ishaHours && ishaMinutes >= currentMinutes){
+        else if(currentHours >= ishaHours || currentHours === ishaHours && currentMinutes >= ishaMinutes){
             nextPrayer = 'Isha'
-           return console.log(timeLeft(ishaHours, ishaMinutes))
+           return `The next prayer is ${nextPrayer} which is ${timeLeft(ishaHours,ishaMinutes)}`
         }
         else{
-            function fajrTimeLeft(){
-                return timeLeft(fajrHours,fajrMinutes)
-            }
-            
-            return timing.innerHTML = `The next prayer is ${nextPrayer} which is ${fajrTimeLeft()}`
+            return timing.innerHTML = `The next prayer is ${nextPrayer} which is ${timeLeft(fajrHours,fajrMinutes)}`
         }
 
         
     })
 })
+
+
+
