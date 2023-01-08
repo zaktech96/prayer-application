@@ -5,60 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Prayer timetable</title>
+    <title>Alwaqat timetable</title>
   </head>
   <body>
-    <h1>Prayer app</h1>
-    <!-- <img class = "mosque__img" src="images/photo-1606654749802-538261d829b6.avif" alt="" srcset=""> -->
-    <section class="main__content">
-      <!-- <q
-        >Maintain with care the [obligatory] prayers and [in particular]
-        <br />the middle prayer and stand before Allah , devoutly obedient.</q
-      > -->
-      <section>
-        <p>Time til next salah</p>
-        <h1 id="time">00:00</h1>
-        <p id="test"></p>
-      </section>
-      <table class="prayer">
-        <tr>
-          
-          <div class="fajr__prayer">
-            <td class="fajr">Fajr prayer Time</td>
-            <td id="fajr">Time</td>
-          </div>
-        </tr>
-
-        <tr>
-          <div class="Dhur__prayer">
-            <td>Dhur prayer time</td>
-            <td id="duhr">time</td>
-          </div>
-        </tr>
-
-        <tr>
-          <div class="Asr__prayer">
-            <td>Asr prayer time</td>
-            <td id="asr">time</td>
-          </div>
-        </tr>
-
-        <tr>
-          <div class="Magrib__prayer">
-            <td>Magrib prayer time</td>
-            <td id="maghrib">time</td>
-          </div>
-        </tr>
-
-        <tr>
-          <div class="Isha__prayer">
-            <td>Isha prayer time</td>
-            <td id="isha">time</td>
-          </div>
-        </tr>
-      </table>
+    <div class="next__salah">
+      <h1>Alwaqat</h1>
+      <p>Time til next salah</p>
+      <h1 id="time">00:00</h1>
+      <p id="test"></p>
     </div>
+    <img class="mosque_img" src="images/mosque-2069853_1280.png" alt="" />
+
+    <section class="prayer__time">
+      <div class="fajr__time">
+        <a href="#">
+          <p>fajr</p>
+          <p>time</p>
+        </a>
+      </div>
+
+      <div class="Dhur__time">
+        <a href="#">
+          <p>Dhur</p>
+          <p>time</p>
+        </a>
+      </div>
+
+      <div class="Asr__time">
+        <a href="#">
+          <p>Asr</p>
+          <p>time</p>
+        </a>
+      </div>
+
+      <div class="Magrib__time">
+        <a href="#">
+          <p>Magrib</p>
+          <p>time</p>
+        </a>
+      </div>
+
+      <div class="Isha__time">
+        <a href="#">
+          <p>Isha</p>
+          <p>time</p>
+        </a>
+      </div>
     </section>
+
+    <!-- <section class="salah__background">
+      <div class="fajr_background">
+        <img
+          src="images/dawid-zawila--G3rw6Y02D0-unsplash.jpg"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="dhur_background">
+        <img src="" alt="" />
+      </div>
+    </section> -->
+
     <script src="script.js"></script>
+    <script src="prayer.js"></script>
   </body>
 </html>

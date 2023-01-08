@@ -1,25 +1,94 @@
-.mosque__img {
-  width: 50%;
-  height: 300px;
+/* body {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  background-image: url("images/julian-steenbergen-TdNdJxtSNYk-unsplash\ copy.jpg");
   background-size: 100%;
-  border: 1px solid red;
+  margin: 15px;
+} */
+
+body {
+  background-color: blueviolet;
+  /* background-image: url("images/ferdinand-stohr-iW1WzbuWMcA-unsplash.jpg"); */
 }
 
+.mosque_img {
+  position: fixed;
+  top: 415px;
+  left: -10px;
+  height: 410px;
+  width: 100%;
+  margin: 15px;
+}
+
+.prayer__time {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  margin: 15px;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  font-weight: 300;
+  color: white;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 25px;
+}
+/* position fixed keeps things in place */
+.next__salah {
+  flex-direction: column;
+  position: fixed;
+  left: 48%;
+  top: 50px;
+  color: white;
+  margin-right: 15px;
+}
+a {
+  color: white;
+}
+.fajr__time {
+  padding: 25px;
+  margin: 25px;
+}
+
+.Dhur__time {
+  padding: 25px;
+  margin: 25px;
+}
+
+.Asr__time {
+  padding: 25px;
+  margin: 25px;
+}
+
+.Magrib__time {
+  padding: 25px;
+  margin: 25px;
+}
+
+.Isha__time {
+  padding: 25px;
+  margin: 25px;
+}
+
+/* will use this in media query for phone
 .main__content {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: large;
   font-weight: 300;
-}
-
-/* .card {
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 40%;
-}
-
-.container {
-  padding: 2px 16px;
+}   */
+/* 
+@media (min-width: 320px) and (max-width: 480px) {
+  .main__content {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    font-weight: 300;
+  }
 } */
