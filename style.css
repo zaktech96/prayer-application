@@ -7,18 +7,19 @@
   margin: 15px;
 } */
 
-body {
-  background-color: blueviolet;
-  /* background-image: url("images/ferdinand-stohr-iW1WzbuWMcA-unsplash.jpg"); */
+.title_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 50px;
+  color: white;
 }
-
-.mosque_img {
+.sunset_image {
   position: fixed;
-  top: 415px;
-  left: -10px;
-  height: 410px;
   width: 100%;
-  margin: 15px;
+  height: 100%;
+  bottom: 50px;
+  z-index: -1;
 }
 
 .prayer__time {
@@ -32,43 +33,45 @@ body {
   font-size: large;
   font-weight: 300;
   color: white;
-  border: 5px solid rgb(255, 255, 255);
-  border-radius: 25px;
+  margin-top: 350px;
+  padding: 125px;
+  z-index: 1;
 }
 /* position fixed keeps things in place */
 .next__salah {
   flex-direction: column;
   position: fixed;
   left: 48%;
-  top: 50px;
+  top: 51%;
   color: white;
   margin-right: 15px;
+  z-index: 1;
 }
 a {
   color: white;
 }
 .fajr__time {
-  padding: 25px;
+  padding: 125px;
   margin: 25px;
 }
 
 .Dhur__time {
-  padding: 25px;
+  padding: 125px;
   margin: 25px;
 }
 
 .Asr__time {
-  padding: 25px;
+  padding: 125px;
   margin: 25px;
 }
 
 .Magrib__time {
-  padding: 25px;
+  padding: 125px;
   margin: 25px;
 }
 
 .Isha__time {
-  padding: 25px;
+  padding: 125px;
   margin: 25px;
 }
 
