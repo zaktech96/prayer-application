@@ -1,11 +1,9 @@
-/* body {
-  display: flex;
-  justify-content: center;
-  height: 70px;
-  background-image: url("images/julian-steenbergen-TdNdJxtSNYk-unsplash\ copy.jpg");
-  background-size: 100%;
-  margin: 15px;
-} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: nunito, sans-serif;
+}
 
 body {
   background: url(images/ferdinand-stohr-iW1WzbuWMcA-unsplash.jpg) no-repeat
@@ -14,110 +12,66 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color: white;
+
 }
 
-.bg {
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.title_info {
+.title_info{
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  /* bottom: 50px; */
-  color: white;
-}
-.title_name {
-  padding: 15px;
-  margin: -5px;
-}
-.about_title {
-  padding: 15px;
-  margin: 10px;
+  margin: 40px 80px;
 }
 
-.Prayer_title {
-  /* padding: 15px;
-  margin: 10px; */
-  display: inline-block;
-  padding: 0px;
-  margin-left: -855px;
-}
-
-/* using inline-block with 0 padding 
-negative margin left in this case helps to close 
-space */
-
-.prayer__time {
+.sub-head{
   display: flex;
-  flex-direction: row;
-  position: fixed;
-  top: 42%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: large;
-  font-weight: 300;
-  color: white;
-  margin-top: 400px;
-  border: 2px beige;
-  border-radius: 25px;
-}
-/* position fixed keeps things in place */
-.next__salah {
-  flex-direction: column;
-  position: fixed;
-  left: 51%;
-  top: 21%;
-  color: white;
-  margin-right: 15px;
-  font-weight: 200;
+  gap: 100px;
 }
 
-.quote_page {
-  position: fixed;
-  left: 7%;
-  top: 51%;
+.next__salah{
+  margin: 100px 0px 0px 0px;
   text-align: center;
-  letter-spacing: 0.2rem;
-  color: white;
-  font-size: large;
 }
-a {
-  color: white;
+
+.quote_page{
+  text-align: center;
+  margin: 50px auto;
+  font-size: 26px;
+  max-width: 800px;
 }
-.square {
+
+.prayer__time{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.square{
   display: flex;
-  flex-direction: row;
-  background-color: rgba(250, 250, 250, 0.218);
-  max-height: 450px;
-  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px 10px;
+  font-size: 18px;
 }
 
-.fajr__time {
-  padding: 95px;
-  margin: 30px;
+a{
+  color: #034680;
+  text-decoration: none;
+}
+#current_time{
+  margin-top: 30px;
+  font-size: 40px;
 }
 
-.Dhur__time {
-  padding: 95px;
-  margin: 30px;
+.country{
+  font-size: 24px;
+  font-weight: 600;
 }
 
-.Asr__time {
-  padding: 95px;
-  margin: 30px;
-}
-
-.Magrib__time {
-  padding: 95px;
-  margin: 30px;
-}
-
-.Isha__time {
-  padding: 95px;
-  margin: 30px;
+.about_tile:hover, .Prayer_title:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* will use this in media query for phone
@@ -140,3 +94,4 @@ a {
     font-weight: 300;
   }
 } */
+
