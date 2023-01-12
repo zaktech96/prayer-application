@@ -13,7 +13,13 @@ let Isha = document.getElementById("isha");
 let timing = document.getElementById("test");
 let currentTime = document.getElementById('current_time')
 
-currentTime.innerHTML = `${currentHours}:${currentMinutes}`
+function getTime(){
+  const time = new Date()
+  const minutes = String(time.getMinutes()).padStart(2, '0');
+  currentTime.innerHTML = `${time.getHours()}:${minutes}`
+}
+getTime()
+setInterval(getTime, 1000)
 
 
 navigator.geolocation.getCurrentPosition((position) => {
@@ -38,3 +44,5 @@ navigator.geolocation.getCurrentPosition((position) => {
       Sunrise.innerHTML = data.data[0].timings.Sunrise.slice(0,5)
     });
 });
+
+
