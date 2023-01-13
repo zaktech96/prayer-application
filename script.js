@@ -23,12 +23,11 @@ function getTime(){
 getTime()
 setInterval(getTime, 1000)
 
+navigator.geolocation.getCurrentPosition(position => {
+  const lat = (position.coords.latitude);
+  const long = (position.coords.longitude);
 
-navigator.geolocation.getCurrentPosition((position) => {
-  const lat = position.coords.latitude;
-  const long = position.coords.longitude;
-
-  fetch(`http://api.aladhan.com/v1/calendar?latitude=${lat}&longitude=${long}&method=15&month=${currentMonth}&year=${currentYear}`)
+  fetch(`https://api.aladhan.com/v1/calendar?latitude=${lat}&longitude=${long}&method=15&month=${currentMonth}&year=${currentYear}`)
     .then((res) => {
       if (!res.ok) {
         console.log('Please allow access to location')
@@ -37,7 +36,7 @@ navigator.geolocation.getCurrentPosition((position) => {
       return res.json();
     })
     .then((data) => {
-      Fajr.innerHTML = data.data[0].timings.Fajr.slice(0, 5);
+      Fajr.textContent = data.data[0].timings.Fajr.slice(0, 5);
       Dhuhr.innerHTML = data.data[0].timings.Dhuhr.slice(0, 5);
       Asr.innerHTML = data.data[0].timings.Asr.slice(0, 5);
       Maghrib.innerHTML = data.data[0].timings.Maghrib.slice(0, 5);
@@ -45,7 +44,6 @@ navigator.geolocation.getCurrentPosition((position) => {
       Sunrise.innerHTML = data.data[0].timings.Sunrise.slice(0,5);
       let result = /[^/]*$/.exec(`${data.data[0].meta.timezone}`)[0];
       area.innerHTML = result
-      console.log(data)
     });
 });
 
