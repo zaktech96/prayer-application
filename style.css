@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,40 +13,40 @@ body {
   -o-background-size: cover;
   background-size: cover;
   color: white;
-
 }
 
-.title_info{
+.title_info {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 40px 80px;
+  color: white;
 }
 
-.sub-head{
+.sub-head {
   display: flex;
   gap: 100px;
 }
 
-.next__salah{
+.next__salah {
   margin: 100px 0px 0px 0px;
   text-align: center;
 }
 
-.quote_page{
+.quote_page {
   text-align: center;
   margin: 50px auto;
   font-size: 26px;
   max-width: 800px;
 }
 
-.prayer__time{
+.prayer__time {
   position: absolute;
   width: 100%;
   bottom: 0;
   text-align: center;
 }
-.square{
+.square {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -55,55 +55,62 @@ body {
   font-size: 18px;
 }
 
-a{
+p.about_tile {
+  color: white;
+}
+
+p.Prayer_title {
+  color: white;
+}
+a {
   color: #034680;
   text-decoration: none;
 }
-#current_time{
+#current_time {
   margin-top: 30px;
   font-size: 40px;
 }
 
-.country{
+.country {
   font-size: 24px;
   font-weight: 600;
 }
 
-.about_tile:hover, .Prayer_title:hover{
+.about_tile:hover,
+.Prayer_title:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-
 @media (max-width: 480px) {
-  .title_info{
+  .title_info {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 20px 20px;
   }
-  .title_name{
+  .title_name {
     font-size: 24px;
   }
-  .about_tile, .Prayer_title{
+  .about_tile,
+  .Prayer_title {
     display: none;
   }
-  .next__salah{
+  .next__salah {
     margin: 20px 0px 0px 0px;
   }
-  #current_time{
+  #current_time {
     margin-top: 20px;
     font-size: 24px;
   }
-  .quote_page{
+  .quote_page {
     text-align: center;
     margin: 30px 40px;
     font-size: 18px;
   }
-  .square{
+  .square {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
   }
-} 
-
+}
