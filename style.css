@@ -84,6 +84,12 @@ input[type="checkbox"] {
   border-radius: 50%; /* Make the element circular */
  /* Add some space between the checkbox and the label */
 }
+.sun{
+  width: 45px;
+  height: 45px;
+}
+
+/*About us */
 
 
 
