@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,27 +13,33 @@ body {
   -o-background-size: cover;
   background-size: cover;
   color: white;
-
 }
 
-.title_info{
+.title_info {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 40px 80px;
 }
 
-.sub-head{
+.sub-head {
   display: flex;
   gap: 100px;
 }
 
-.next__salah{
+.about_tile {
+  color: white;
+}
+.Prayer_title {
+  color: white;
+}
+
+.next__salah {
   margin: 100px 0px 0px 0px;
   text-align: center;
 }
 
-.quote_page{
+.quote_page {
   text-align: center;
   margin: 50px auto;
   font-size: 22px;
@@ -41,36 +47,37 @@ body {
   max-width: 800px;
 }
 
-.prayer__time{
+.prayer__time {
   position: absolute;
   width: 100%;
   bottom: 0;
   text-align: center;
 }
-.square{
+.square {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 30px 10px;
   font-size: 18px;
-  color:#034680;;
+  color: #034680;
 }
 
-a{
+a {
   text-decoration: none;
 }
-#current_time{
+#current_time {
   margin-top: 30px;
   font-size: 40px;
 }
 
-.country{
+.country {
   font-size: 24px;
   font-weight: 600;
 }
 
-.about_tile:hover, .Prayer_title:hover{
+.about_tile:hover,
+.Prayer_title:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -82,46 +89,184 @@ input[type="checkbox"] {
   cursor: pointer;
   height: 20px;
   border-radius: 50%; /* Make the element circular */
- /* Add some space between the checkbox and the label */
+  /* Add some space between the checkbox and the label */
 }
-.sun{
+.sun {
   width: 45px;
   height: 45px;
 }
 
 /*About us */
+.about_title {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 45%;
+}
+.alwaqt_info {
+  position: absolute;
+  bottom: 85%;
+}
+.fa-angle-left {
+  color: white;
+}
 
+.main_text {
+  width: 25%;
+  margin: 55px;
+}
+.intro_aboutus {
+  padding: 25px;
+}
 
+.talk_makers {
+  padding: 45px;
+}
+
+.team_title {
+  display: flex;
+  justify-content: center;
+}
+.about_product {
+  position: absolute;
+  left: -1%;
+  padding: 41px;
+}
+
+.title_us {
+  display: flex;
+  justify-content: center;
+}
+
+.team_title {
+  position: absolute;
+  bottom: 57%;
+  left: 45%;
+}
+
+.zak_content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.zak_image {
+  height: 70px;
+  position: absolute;
+  background-image: url("images/zak_photo.jpeg");
+  background-size: 100% 100%;
+  left: 25%;
+  top: 47%;
+  border-radius: 50%;
+  width: 15%;
+  padding: 70px;
+  margin: 20px;
+}
+
+.zak_content {
+  display: flex;
+}
+
+.zak_name {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 23%;
+  bottom: 14%;
+  padding: 25px;
+  margin: 45px;
+}
+.zak_role {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 25%;
+  bottom: 11%;
+  padding: 25px;
+  margin: 15px;
+}
+.zak_info {
+  position: absolute;
+  right: 33%;
+  bottom: -28%;
+  width: 45%;
+  padding: 65px;
+  margin: 115px;
+}
+
+.ibrahim_image {
+  height: 70px;
+  position: absolute;
+  left: 60%;
+  bottom: 27%;
+  background-image: url("images/ibrahim\ project.jpeg");
+  background-size: 100% 100%;
+  border-radius: 50%;
+  width: 15%;
+  padding: 70px;
+  margin: 20px;
+}
+
+.ibrahim_name {
+  position: absolute;
+  left: 65%;
+  bottom: 20%;
+  padding: 5px;
+}
+
+.ibrahim_role {
+  position: absolute;
+  left: 65%;
+  bottom: 14%;
+}
+
+.ibrahim_background {
+  position: absolute;
+  left: 62%;
+  bottom: 3%;
+}
+
+.future_items {
+  position: absolute;
+  left: 40%;
+  bottom: -15%;
+}
+.future_content {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 38%;
+  bottom: -28%;
+}
 
 @media (max-width: 480px) {
-  .title_info{
+  .title_info {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 20px 20px;
   }
-  .title_name{
+  .title_name {
     font-size: 24px;
   }
-  .about_tile, .Prayer_title{
+  .about_tile,
+  .Prayer_title {
     display: none;
   }
-  .next__salah{
+  .next__salah {
     margin: 20px 0px 0px 0px;
   }
-  #current_time{
+  #current_time {
     margin-top: 20px;
     font-size: 24px;
   }
-  .quote_page{
+  .quote_page {
     text-align: center;
     margin: 30px 40px;
     font-size: 18px;
   }
-  .square{
+  .square {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
   }
-} 
-
+}
