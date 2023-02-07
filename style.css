@@ -238,6 +238,29 @@ input[type="checkbox"] {
   bottom: -28%;
 }
 
+/*Prayer Times */
+.display-items {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+.display-items ul{
+  border: 2px solid white;
+  border-radius: 30px;
+  list-style: none;
+  text-align: center;
+}
+.display-items ul p{
+  font-weight: 600;
+  text-align: center;
+}
+.titlePrayer{
+  text-align: center;
+  margin: 50px 0px;
+  text-decoration: underline;
+}
+
 @media (max-width: 480px) {
   .title_info {
     display: flex;
