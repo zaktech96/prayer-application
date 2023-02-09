@@ -144,98 +144,82 @@ input[type="checkbox"] {
   left: 45%;
 }
 
-.zak_content {
+.flex-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  margin: 10px;
+  margin-top: 180px;
+  margin-left: 15px;
+  padding: 100px;
 }
 
-.zak_image {
-  height: 70px;
-  position: absolute;
-  background-image: url("images/zak_photo.jpeg");
-  background-size: 100% 100%;
-  left: 25%;
-  top: 47%;
-  border-radius: 50%;
-  width: 15%;
-  padding: 70px;
-  margin: 20px;
-}
-
-.zak_content {
+.ibrahim_name {
   display: flex;
+  justify-content: center;
+}
+.ibrahim_role {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.ibrahim_info {
+  width: 100%;
+  margin: 10px;
+  margin-bottom: 15px;
 }
 
 .zak_name {
   display: flex;
   justify-content: center;
-  position: absolute;
-  left: 23%;
-  bottom: 14%;
-  padding: 25px;
-  margin: 45px;
 }
+
 .zak_role {
   display: flex;
   justify-content: center;
-  position: absolute;
-  left: 25%;
-  bottom: 11%;
-  padding: 25px;
-  margin: 15px;
+  margin: 10px;
 }
+
 .zak_info {
-  position: absolute;
-  right: 33%;
-  bottom: -28%;
-  width: 45%;
-  padding: 65px;
-  margin: 115px;
+  width: 100%;
+  margin: 10px;
 }
 
-.ibrahim_image {
-  height: 70px;
-  position: absolute;
-  left: 60%;
-  bottom: 27%;
-  background-image: url("images/ibrahim\ project.jpeg");
-  background-size: 100% 100%;
+.flex-container div {
+  width: 100%;
+  margin: 0 10%;
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+
+.flex_1 {
   border-radius: 50%;
-  width: 15%;
-  padding: 70px;
-  margin: 20px;
+  width: 100%;
+  height: 40%;
 }
 
-.ibrahim_name {
-  position: absolute;
-  left: 65%;
-  bottom: 20%;
-  padding: 5px;
+.flex {
+  border-radius: 50%;
+  width: 100%;
+  height: 40%;
 }
 
-.ibrahim_role {
-  position: absolute;
-  left: 65%;
-  bottom: 14%;
-}
-
-.ibrahim_background {
-  position: absolute;
-  left: 62%;
-  bottom: 3%;
+.future_release {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1910px;
+  gap: -815px;
 }
 
 .future_items {
-  position: absolute;
-  left: 40%;
-  bottom: -15%;
-}
-.future_content {
   display: flex;
   justify-content: center;
-  position: absolute;
-  left: 38%;
-  bottom: -28%;
+}
+.future_content {
+  width: 80%;
+  padding: 15px;
+  margin-left: 175px;
 }
 
 /*Prayer Times */
