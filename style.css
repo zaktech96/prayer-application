@@ -208,8 +208,10 @@ input[type="checkbox"] {
 .future_release {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1910px;
-  gap: -815px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  /* margin-bottom: 1910px; */
+  /* gap: -815px; */
 }
 
 .future_items {
@@ -229,17 +231,17 @@ input[type="checkbox"] {
   column-gap: 50px;
   row-gap: 50px;
 }
-.display-items ul{
+.display-items ul {
   border: 2px solid white;
   border-radius: 30px;
   list-style: none;
   text-align: center;
 }
-.display-items ul p{
+.display-items ul p {
   font-weight: 600;
   text-align: center;
 }
-.titlePrayer{
+.titlePrayer {
   text-align: center;
   margin: 50px 0px;
   text-decoration: underline;
