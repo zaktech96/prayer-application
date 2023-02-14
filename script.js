@@ -4,6 +4,7 @@ const currentYear = date.getFullYear();
 const currentHours = date.getHours();
 const currentMinutes = date.getMinutes();
 
+
 let Fajr = document.getElementById("fajr");
 let Sunrise = document.getElementById("sunrise")
 let Dhuhr = document.getElementById("duhr");
@@ -30,7 +31,8 @@ setInterval(getTime, 1000)
 navigator.geolocation.getCurrentPosition(position => {
   const lat = (position.coords.latitude);
   const long = (position.coords.longitude);
-
+  const date = new Date();
+  const day = date.getDate() - 1
   fetch(`https://api.aladhan.com/v1/calendar?latitude=${lat}&longitude=${long}&method=15&month=${currentMonth}&year=${currentYear}`)
     .then((res) => {
       if (!res.ok) {
@@ -41,14 +43,16 @@ navigator.geolocation.getCurrentPosition(position => {
     })
     .then((data) => {
       console.log(data)
-      Fajr.textContent = data.data[0].timings.Fajr.slice(0, 5);
-      Dhuhr.innerHTML = data.data[0].timings.Dhuhr.slice(0, 5);
-      Asr.innerHTML = data.data[0].timings.Asr.slice(0, 5);
-      Maghrib.innerHTML = data.data[0].timings.Maghrib.slice(0, 5);
-      Isha.innerHTML = data.data[0].timings.Isha.slice(0, 5);   
-      Sunrise.innerHTML = data.data[0].timings.Sunrise.slice(0,5);
-      let result = /[^/]*$/.exec(`${data.data[0].meta.timezone}`)[0];
+      Fajr.textContent = data.data[day].timings.Fajr.slice(0, 5);
+      Dhuhr.innerHTML = data.data[day].timings.Dhuhr.slice(0, 5);
+      Asr.innerHTML = data.data[day].timings.Asr.slice(0, 5);
+      Maghrib.innerHTML = data.data[day].timings.Maghrib.slice(0, 5);
+      Isha.innerHTML = data.data[day].timings.Isha.slice(0, 5);   
+      Sunrise.innerHTML = data.data[day].timings.Sunrise.slice(0,5);
+      let result = /[^/]*$/.exec(`${data.data[day].meta.timezone}`)[0];
       area.innerHTML = result
+
+      
     });
 
 });
@@ -105,12 +109,12 @@ if (today.getDate() !== lastCleared.getDate()) {
   localStorage.setItem("lastCleared", today);
 }
 
-
-fetch('https://hadithapi.com/public/api/hadiths?apiKey=$2y$10$jhJBF4h8hoVgZ4HFybBbWFWThqcMpM2FJm6m7uQzrBlzCTNuepq')
-  .then((res) => res.json())
+fetch('quotes.json')
+  .then(res => res.json())
   .then(data => {
-    console.log(data.hadiths.data)
-   // quote.innerHTML = data.hadiths.data[17].hadithEnglish
+    console.log(data.quotes[0])
+    quote.textContent = data.quotes[0].text
+    document.querySelector('.quote-ref').textContent = `${data.quotes[0].author}`
   })
 
 //$2y$10$jhJBF4h8hoVgZ4HFybBbWFWThqcMpM2FJm6m7uQzrBlzCTNuepq
