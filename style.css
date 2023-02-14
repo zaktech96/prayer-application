@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,33 +13,30 @@ body {
   -o-background-size: cover;
   background-size: cover;
   color: white;
-}
 
-.title_info {
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.title_info{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 40px 80px;
 }
 
-.sub-head {
+.sub-head{
   display: flex;
   gap: 100px;
 }
 
-.about_tile {
-  color: white;
-}
-.Prayer_title {
-  color: white;
-}
-
-.next__salah {
+.next__salah{
   margin: 100px 0px 0px 0px;
   text-align: center;
 }
 
-.quote_page {
+.quote_page{
   text-align: center;
   margin: 50px auto;
   font-size: 22px;
@@ -47,37 +44,36 @@ body {
   max-width: 800px;
 }
 
-.prayer__time {
+.prayer__time{
   position: absolute;
   width: 100%;
   bottom: 0;
   text-align: center;
 }
-.square {
+.square{
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 30px 10px;
   font-size: 18px;
-  color: #034680;
+  color:#034680;;
 }
 
-a {
+a{
   text-decoration: none;
 }
-#current_time {
+#current_time{
   margin-top: 30px;
   font-size: 40px;
 }
 
-.country {
+.country{
   font-size: 24px;
   font-weight: 600;
 }
 
-.about_tile:hover,
-.Prayer_title:hover {
+.about_tile:hover, .Prayer_title:hover{
   text-decoration: underline;
   cursor: pointer;
 }
@@ -89,139 +85,11 @@ input[type="checkbox"] {
   cursor: pointer;
   height: 20px;
   border-radius: 50%; /* Make the element circular */
-  /* Add some space between the checkbox and the label */
+ /* Add some space between the checkbox and the label */
 }
-.sun {
+.sun{
   width: 45px;
   height: 45px;
-}
-
-/*About us */
-.about_title {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 45%;
-}
-.alwaqt_info {
-  position: absolute;
-  bottom: 85%;
-}
-.fa-angle-left {
-  color: white;
-}
-
-.main_text {
-  width: 25%;
-  margin: 55px;
-}
-.intro_aboutus {
-  padding: 25px;
-}
-
-.talk_makers {
-  padding: 45px;
-}
-
-.team_title {
-  display: flex;
-  justify-content: center;
-}
-.about_product {
-  position: absolute;
-  left: -1%;
-  padding: 41px;
-}
-
-.title_us {
-  display: flex;
-  justify-content: center;
-}
-
-.team_title {
-  position: absolute;
-  bottom: 57%;
-  left: 45%;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 10%;
-  margin: 10px;
-  margin-top: 180px;
-  margin-left: 15px;
-  padding: 100px;
-}
-
-.ibrahim_name {
-  display: flex;
-  justify-content: center;
-}
-.ibrahim_role {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-.ibrahim_info {
-  width: 100%;
-  margin: 10px;
-  margin-bottom: 15px;
-}
-
-.zak_name {
-  display: flex;
-  justify-content: center;
-}
-
-.zak_role {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-
-.zak_info {
-  width: 100%;
-  margin: 10px;
-}
-
-.flex-container div {
-  width: 100%;
-  margin: 0 10%;
-  padding: 10px;
-  /* border: 1px solid black; */
-}
-
-.flex_1 {
-  border-radius: 50%;
-  width: 100%;
-  height: 40%;
-}
-
-.flex {
-  border-radius: 50%;
-  width: 100%;
-  height: 40%;
-}
-
-.future_release {
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
-  padding-bottom: 15px;
-  /* margin-bottom: 1910px; */
-  /* gap: -815px; */
-}
-
-.future_items {
-  display: flex;
-  justify-content: center;
-}
-.future_content {
-  width: 80%;
-  padding: 15px;
-  margin-left: 175px;
 }
 
 /*Prayer Times */
@@ -230,52 +98,86 @@ input[type="checkbox"] {
   grid-template-columns: auto auto auto auto auto auto;
   column-gap: 50px;
   row-gap: 50px;
+  margin: 0px 30px;
 }
-.display-items ul {
+.display-items ul{
   border: 2px solid white;
   border-radius: 30px;
   list-style: none;
   text-align: center;
 }
-.display-items ul p {
+.display-items ul p{
   font-weight: 600;
   text-align: center;
 }
-.titlePrayer {
+.titlePrayer{
   text-align: center;
   margin: 50px 0px;
   text-decoration: underline;
 }
 
+/*About Us*/
+.about_title{
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.about_us{
+  margin: 0px 20px;
+}
+.meet{
+  text-align: center;
+  margin: 20px 0px;
+}
+.flexy{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.col{
+  width: 50%;
+}
+img{
+  max-width: 100%;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
 @media (max-width: 480px) {
-  .title_info {
+  .title_info{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 20px 20px;
   }
-  .title_name {
+  .title_name{
     font-size: 24px;
   }
-  .about_tile,
-  .Prayer_title {
+  .about_tile, .Prayer_title{
     display: none;
   }
-  .next__salah {
+  .next__salah{
     margin: 20px 0px 0px 0px;
   }
-  #current_time {
+  #current_time{
     margin-top: 20px;
     font-size: 24px;
   }
-  .quote_page {
+  .quote_page{
     text-align: center;
     margin: 30px 40px;
     font-size: 18px;
   }
-  .square {
+  .square{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
   }
-}
+  .flexy{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+  }
+} 
+
