@@ -182,7 +182,7 @@ img {
 .future_release {
   margin-top: 135px;
 }
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 480px) {
   .title_info {
     display: flex;
     align-items: center;
@@ -195,7 +195,7 @@ img {
   }
 
   .have_prayed {
-    font-size: medium;
+    margin-bottom: 125px;
   }
 
   .prayer__time {
