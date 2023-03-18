@@ -254,9 +254,8 @@ img {
     top: 35px;
     font-size: 25px;
   }
-
-  .what__alwaqat {
-    font-size: 20px;
+  .alwaqat_info > h2 {
+    font-size: 15px;
   }
   .about_product {
     font-size: 25px;
