@@ -195,7 +195,7 @@ img {
   }
 
   .have_prayed {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .prayer__time {
@@ -243,11 +243,11 @@ img {
   .greeting {
     position: absolute;
     top: 20px;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .about_product {
-    font-size: 125px;
+    font-size: 15px;
   }
 
   .alwaqat_info {
