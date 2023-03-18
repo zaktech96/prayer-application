@@ -262,6 +262,10 @@ img {
     top: 505px;
     font-weight: bold;
   }
+
+  .col {
+    padding: 5px;
+  }
   .col_text {
     padding: 25px;
   }
