@@ -260,6 +260,9 @@ img {
     top: 445px;
     font-weight: bold;
   }
+  .col_text {
+    padding: 5px;
+  }
   .display-items ul {
     border: 4px solid white;
     width: 100%;
