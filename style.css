@@ -245,20 +245,18 @@ img {
   .About__title {
     position: absolute;
     top: 55px;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
   }
 
   .greeting {
     position: absolute;
-    top: 35px;
+    top: 20px;
     font-size: 25px;
   }
 
   .about_product {
     font-size: 15px;
-    position: absolute;
-    top: 45px;
   }
 
   .alwaqat_info {
