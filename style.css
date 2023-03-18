@@ -195,7 +195,7 @@ img {
   }
 
   .have_prayed {
-    font-size: 15px;
+    font-size: 25px;
   }
 
   .prayer__time {
@@ -226,15 +226,6 @@ img {
     gap: 10px;
   }
 
-  /* .square {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 30px 10px;
-    font-size: 18px;
-    color: #034680;
-  } */
   .flexy {
     flex-direction: column;
   }
