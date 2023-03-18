@@ -245,14 +245,14 @@ img {
   .About__title {
     position: absolute;
     top: 55px;
-    font-size: 15px;
+    font-size: 35px;
     text-align: center;
   }
 
   .greeting {
     position: absolute;
     top: 35px;
-    font-size: 15px;
+    font-size: 25px;
   }
 
   .about_product {
