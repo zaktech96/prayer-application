@@ -222,8 +222,19 @@ img {
   .square {
     display: grid;
     grid-template-columns: auto auto auto;
+    padding: 10px 10px;
     gap: 10px;
   }
+
+  /* .square {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 30px 10px;
+    font-size: 18px;
+    color: #034680;
+  } */
   .flexy {
     flex-direction: column;
   }
