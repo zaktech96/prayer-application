@@ -252,11 +252,14 @@ img {
   .greeting {
     position: absolute;
     top: 35px;
-    font-size: 15px;
+    font-size: 25px;
   }
 
+  .what__alwaqat {
+    font-size: 20px;
+  }
   .about_product {
-    font-size: 15px;
+    font-size: 25px;
   }
 
   .alwaqat_info {
