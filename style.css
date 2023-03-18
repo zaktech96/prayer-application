@@ -258,6 +258,7 @@ img {
   .main_aboutus {
     position: absolute;
     top: 445px;
+    font-weight: bold;
   }
   .display-items ul {
     border: 4px solid white;
